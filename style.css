@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Very-dark-blue-main-bg: hsl(217, 54%, 11%);
+  --Very-dark-blue-card-bg: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  background-color: var(--Very-dark-blue-main-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: var(--Very-dark-blue-card-bg);
+  max-width: 350px;
+  border-radius: 1rem;
+}
+
+#nft-image {
+  width: 100%;
+  border-radius: 0.4rem;
+}
+
+.nft-title {
+  color: var(--White);
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-top: 1.1rem;
+}
+
+.desc {
+  color: var(--Soft-blue);
+}
+
+.nft-img-container {
+  position: relative;
+}
+
+.img-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: hsla(178, 100%, 50%, 0.5);
+  display: none;
+}
+
+.eye-img {
+  position: absolute;
+  width: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid var(--Very-dark-blue-line);
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price p {
+  color: var(--Cyan);
+  font-weight: 600;
+}
+
+#icon-ethereum {
+  margin-right: 0.45rem;
+}
+.time-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.time-left p {
+  color: var(--Soft-blue);
+  font-weight: 300;
+}
+
+#icon-clock {
+  margin-right: 0.45rem;
+}
+
+.artist-info {
+  display: flex;
+  align-items: center;
+  color: var(--Soft-blue);
+  margin-top: 0.8rem;
+}
+
+.artist-info img {
+  width: 2.5rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.artist-info .name {
+  color: var(--White);
+  font-weight: 300;
+}
+
+.artist-info p {
+  margin-left: 1.3rem;
+}

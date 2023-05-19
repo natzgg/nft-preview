@@ -54,6 +54,7 @@ main {
 }
 
 .nft-img-container {
+  max-height: 280px;
   position: relative;
 }
 
@@ -65,6 +66,8 @@ main {
   width: 100%;
   background-color: hsla(178, 100%, 50%, 0.5);
   display: none;
+  max-height: 280px;
+  border-radius: 0.4rem;
 }
 
 .eye-img {
@@ -73,6 +76,11 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.nft-img-container:hover .img-overlay {
+  display: block;
+  cursor: pointer;
 }
 
 .info {

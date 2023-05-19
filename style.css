@@ -33,7 +33,7 @@ main {
   flex-direction: column;
   padding: 2rem;
   background-color: var(--Very-dark-blue-card-bg);
-  max-width: 350px;
+  max-width: 280px;
   border-radius: 1rem;
 }
 
